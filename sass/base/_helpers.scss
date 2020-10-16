@@ -1,0 +1,29 @@
+.img-wrap {
+  img {
+    width: 100%;
+  }
+}
+.wrapper {
+  max-width: 114rem;
+  width: 90%;
+  margin: auto;
+}
+.flex-row {
+  display: flex;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+.h1-wrap {
+  .h1 {
+    border-bottom: 4px solid $light-blue;
+    display: inline-block;
+  }
+}
+.line {
+  border-top: 4px solid $light-blue;
+  position: relative;
+  top: -4px;
+}
+

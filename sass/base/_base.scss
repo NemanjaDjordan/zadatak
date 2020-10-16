@@ -1,0 +1,25 @@
+body,
+html {
+  background-color: #fff;
+  font-size: 62.5%;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  color: #585c60;
+}
+.circle-wrap {
+  position: fixed;
+  top: 50vh;
+  right: 5rem;
+  margin: -9vh 0 0;
+  z-index: 101;
+}
+.circle {
+  border-radius: 50%;
+  width: 1.2rem;
+  height: 1.2rem;
+  background-color: $white;
+  cursor: pointer;
+}
+.circle:not(:first-child) {
+  margin: 3rem 0 0;
+}
