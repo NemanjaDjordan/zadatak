@@ -4,6 +4,7 @@ var h1Wrap = $('.h1-wrap'),
   $jsNavigation = $('.js-navigation'),
   $window = $(window);
 
+// Header line width
 $(document).ready(h1function);
 $(window).resize(h1function);
 
@@ -15,6 +16,8 @@ function h1function() {
   line.css('width', h1MarginLeft)
 }
 
+
+// Navigation
 $jsNavigation.on("click touchstart", function () {
   var dataId = $(this).attr('data-id'),
     dataClass = $(this).attr('data-class'),
@@ -27,24 +30,3 @@ $jsNavigation.on("click touchstart", function () {
   $('[data-id="' + dataClass + '"]').addClass('active');
 });
 
-// $(document).ready(function () {
-//   var windowHeight = $(window).height(),
-//     gridTop = windowHeight * .3,
-//     gridBottom = windowHeight * .6,
-//     elementClass = $(this).attr('id');
-
-//   $(window).on('scroll', function () {
-//     $('.section').each(function () {
-//       var thisTop = $(this).offset().top - $(window).scrollTop();
-      
-      
-//       if (thisTop > gridTop && (thisTop + $(this).height()) < gridBottom) {
-//         // elementClass.removeClass('aaa');
-//         console.log("radi")
-//       } else {
-//         // elementClass.addClass('aaa');
-//         console.log("ne radi")
-//       }
-//     });
-//   });
-// });
