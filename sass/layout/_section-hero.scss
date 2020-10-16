@@ -1,0 +1,82 @@
+.section-hero {
+  background-image: url('../../assets/images/hero.png');
+  background-position: center;
+  background-size: cover;
+  color: $white;
+  font-family: 'Futura Std';
+  position: relative;
+  padding: 0 0 1.9rem;
+  .triangle-container {
+    opacity: .8;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    overflow: hidden;
+  }
+  .triangle {
+    width: 200%;
+    height: 100%;
+    background-size: 50.2% 100%;
+    background-repeat: no-repeat;
+    background-position: top left, top right;
+    transform: rotate(-180deg);
+    position: relative;
+    left: -100%;
+  }
+  .triangle-container-bottom {
+    .triangle {
+      background-image: linear-gradient(to top right, transparent 50%, #193e47 50%);
+      z-index: -1;
+    }
+  }
+  .triangle-container-top {
+    .triangle {
+      background-image: linear-gradient(to bottom left, transparent 50%, #05111d 50%);
+    }
+  }
+  .img-wrap {
+    width: 38.5%;
+    margin: 0 auto 27.8rem;
+    position: relative;
+    z-index: 101;
+    @include breakpoint(900px) {
+      width: 48.5%;
+    }
+    @include breakpoint(phone) {
+      width: 68.5%;
+    }
+  }
+  .btn {
+    margin: 5.6rem 0 18.3%;
+    position: relative;
+    left: 78.3vw;
+    @include breakpoint(tablet) {
+      left: 68.3vw;
+    }
+    @include breakpoint(550px) {
+      left: 58.3vw;
+      margin: 5.6rem 0 32.3%;
+    }
+    @include breakpoint(380px) {
+      left: 38.3vw;
+    }
+  }
+  .adress,
+  .email {
+    position: relative;
+    z-index: 101;
+    font-size: 3.2rem;
+    text-align: center;
+  }
+  .email {
+    margin-bottom: 1.3rem;
+  }
+  .adress {
+    text-transform: uppercase;
+    margin: 0 0 5rem;
+  }
+  .btn-scroll {
+    margin: 0 auto;
+  }
+}

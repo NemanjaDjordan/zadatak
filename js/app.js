@@ -17,28 +17,34 @@ function h1function() {
 
 $jsNavigation.on("click touchstart", function () {
   var dataId = $(this).attr('data-id'),
+    dataClass = $(this).attr('data-class'),
     widowsHeight = 0;
+
   $('html, body').animate({
     scrollTop: $('[data-name="' + dataId + '"]').offset().top - widowsHeight
   }, 1000);
-
+  $('.circle').removeClass('active');
+  $('[data-id="' + dataClass + '"]').addClass('active');
 });
 
-$(document).ready(function () {
-  var windowHeight = $(window).height(),
-    gridTop = windowHeight * .3,
-    gridBottom = windowHeight * .6;
-  $(window).on('scroll', function () {
-    $('.section').each(function () {
-      var thisTop = $(this).offset().top - $(window).scrollTop();
+// $(document).ready(function () {
+//   var windowHeight = $(window).height(),
+//     gridTop = windowHeight * .3,
+//     gridBottom = windowHeight * .6,
+//     elementClass = $(this).attr('id');
+
+//   $(window).on('scroll', function () {
+//     $('.section').each(function () {
+//       var thisTop = $(this).offset().top - $(window).scrollTop();
       
-      if (thisTop > gridTop && (thisTop + $(this).height()) < gridBottom) {
-        $(this).removeClass('aaa');
-        console.log("radi")
-      } else {
-        $(this).addClass('aaa');
-        console.log("ne radi")
-      }
-    });
-  });
-});
+      
+//       if (thisTop > gridTop && (thisTop + $(this).height()) < gridBottom) {
+//         // elementClass.removeClass('aaa');
+//         console.log("radi")
+//       } else {
+//         // elementClass.addClass('aaa');
+//         console.log("ne radi")
+//       }
+//     });
+//   });
+// });

@@ -1,0 +1,83 @@
+.section-advisors {
+  position: relative;
+  padding: 0 0 16.6rem;
+  .flex-row {
+    position: relative;
+    flex-wrap: wrap;
+    .h1 {
+      width: 50%;
+      text-align: right;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      @include breakpoint(815px) {
+        width: 100%;
+        position: relative;
+      }
+    }
+  }
+  .list {
+    font-size: 1.6rem;
+    line-height: 3.8rem;
+    @include breakpoint(415px) {
+      font-size: 1.3rem;
+      line-height: 3rem;
+    }
+  }
+  .item::before {
+    content: '';
+    width: .8rem;
+    height: .8rem;
+    border-radius: 50%;
+    background: $grey;
+    display: inline-block;
+    position: relative;
+    left: -2rem;
+    top: -.4rem;
+  }
+  .btn-scroll {
+    position: absolute;
+    left: 50vw;
+    bottom: 2rem;
+    margin: 0 0 0 -2rem;
+    &::after,
+    &::before {
+      background-color: $grey;
+    }
+  }
+}
+.advisor {
+  width: 50%;
+  margin: 7.8rem 0 0;
+  @include breakpoint(1260px) {
+    flex-direction: column;
+  }
+  @include breakpoint(815px) {
+    width: 100%;
+  }
+  .img-wrap {
+    width: 35.4%;
+    @include breakpoint(1260px) {
+      margin: 0 0 3rem;
+    }
+    @include breakpoint(815px) {
+      width: 50%;
+    }
+    @include breakpoint(500px) {
+      width: 70%;
+    }
+  }
+  .info {
+    width: 64.6%;
+    padding: 0 0 0 3.9rem;
+    @include breakpoint(1260px) {
+      width: 100%;
+    }
+  }
+  .name {
+    font-size: 3.2rem;
+    color: $light-blue;
+    font-family: 'Futura Std';
+    margin: .3rem 0 1.8rem;
+  }
+}

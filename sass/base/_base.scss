@@ -4,7 +4,7 @@ html {
   font-size: 62.5%;
   margin: 0;
   font-family: 'Open Sans', sans-serif;
-  color: #585c60;
+  color: $grey;
 }
 .circle-wrap {
   position: fixed;
@@ -22,4 +22,7 @@ html {
 }
 .circle:not(:first-child) {
   margin: 3rem 0 0;
+}
+.active {
+  background-color: $light-blue;
 }

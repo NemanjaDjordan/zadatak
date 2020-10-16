@@ -9,11 +9,11 @@
   </head>
   <body>
     <div class="circle-wrap flex-column">
-      <div class="circle js-navigation" data-id="hero"></div>
-      <div class="circle js-navigation" data-id="about"></div>
-      <div class="circle js-navigation" data-id="portfolio"></div>
-      <div class="circle js-navigation" data-id="promo1"></div>
-      <div class="circle js-navigation" data-id="promo2"></div>
+      <div class="circle js-navigation" data-id="hero" data-circe="hero"></div>
+      <div class="circle js-navigation" data-id="about" data-circe="about"></div>
+      <div class="circle js-navigation" data-id="portfolio" data-circe="portfolio"></div>
+      <div class="circle js-navigation" data-id="advisors" data-circe="advisors"></div>
+      <div class="circle js-navigation" data-id="investors" data-circe="investors"></div>
     </div>
     
     <div class="main">
@@ -34,7 +34,7 @@
         </div>
         <span class="email">partners@harpoon.vc</span>
         <span class="adress">Menlo Park, CA</span>
-        <button class="btn-scroll js-navigation" data-id="about"></button>
+        <button class="btn-scroll js-navigation" data-id="about" data-class="about"></button>
       </div>
 
       <section class="section-about section" data-name="about">
@@ -61,7 +61,7 @@
             </div>
           </div>
         </div>
-        <button class="btn-scroll js-navigation" data-id="portfolio"></button>
+        <button class="btn-scroll js-navigation" data-id="portfolio" data-class="portfolio"></button>
       </section>
 
       <div class="section-portfolio section" data-name="portfolio">
@@ -116,9 +116,8 @@
           </div>
         </div>
         <span class="quote">"This portfolio was constructed in less then 1 month"</span>
-        <button class="btn-scroll js-navigation" data-id="advisors"></button>
-      </div>
-      
+        <button class="btn-scroll js-navigation" data-id="advisors" data-class="advisors"></button>
+      </div>      
       
       <div class="section-advisors section" data-name="advisors">
         <div class="h1-wrap wrapper">
@@ -201,7 +200,7 @@
             <h1 class="h1">... and unparalleled network leverage."</h1>
           </div>
         </div>  
-        <button class="btn-scroll js-navigation" data-id="investors"></button> 
+        <button class="btn-scroll js-navigation" data-id="investors" data-class="investors" data-class="investors"></button> 
       </div>   
 
       <div class="section-investors" data-name="investors">
@@ -227,9 +226,13 @@
             </div>
           </div>
         </div>
-        <button class="btn-scroll js-navigation" data-id="hero"></button> 
+        <button class="btn-scroll js-navigation" data-id="hero" data-class="hero"></button> 
       </div>
     </div>
+
+    <footer class="footer">
+      <p class="text">Copyright Harpoon Ventures All Right Reserved</p>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="./assets/js/app.js"></script>
